@@ -90,9 +90,12 @@ function UpdateMovie(props) {
     axios
       .put(`http://localhost:5000/api/movies/${movie.id}`, movie)
       .then((res) => {
-        console.log(res.data);
-        setMovie(res.data);
+        // setMovie(res.data);
+        // props.setMovieList([
+        //   ...movieList
+        // ])
         push("/");
+        // window.location.reload(true);
       })
       .catch((err) => console.log(err));
   };

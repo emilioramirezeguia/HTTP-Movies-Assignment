@@ -27,7 +27,6 @@ function Movie({ addToSavedList, movieList, setMovieList }) {
     axios
       .delete(`http://localhost:5000/api/movies/${params.id}`)
       .then((response) => {
-        console.log(response);
         // setMovieList(
         //   ...movieList.filter((movie) => {
         //     if (movie.id !== response.data) {
